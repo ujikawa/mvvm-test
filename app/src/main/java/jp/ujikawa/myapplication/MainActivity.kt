@@ -19,7 +19,6 @@ class MainActivity : AppCompatActivity() {
         thread {
             try {
                 val response = ApiClient.fetchReposList()
-                // とりあえず1つだけ表示させてみる
                 val firstRepos = response.body()!![0]
 
                 // 別スレッドからUI操作ができないのでhandlerを使用する
