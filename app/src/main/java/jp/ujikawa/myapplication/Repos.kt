@@ -1,4 +1,5 @@
 package jp.ujikawa.myapplication
 
-// dataにしておくと便利って理由だけ
+// Dataクラス
+// dataにしておくと何かと便利って理由でdataにしてるだけなので、classでも問題ない
 data class Repos(val name: String)
